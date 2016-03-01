@@ -4,15 +4,15 @@ function __autoload ($name) {
 	if (! include $str) echo ("Неудача");
 }
 $db = new DB();
-$arr = $db->ShowMarks();
+$arr = $db->ShowTypes();
 if (isset($_POST["name"])) {
-	$db->AddMarks($_POST["name"]);
+	$db->AddTypes($_POST["name"]);
 }
 ?>
 
 <html>
 <head>
-	<title>AddGoods page!</title>
+	<title>AddTypes page!</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
@@ -26,8 +26,8 @@ if (isset($_POST["name"])) {
 				<li><a href="addTypes.php">ДОБАВИТЬ ТИПЫ</a></li>
 			</ul>
 	</div>
-	<p>Уже добавленные марки:</p>
 	<div id="infoblock">
+		<p>Уже добавленные типы:</p>
 		<?php
 			if(isset($arr)){
 				foreach($arr as $val){
@@ -35,10 +35,10 @@ if (isset($_POST["name"])) {
 				}
 			}
 		?>
-		<form action="addMarks.php" method="POST">
+		<form action="addTypes.php" method="POST">
 			<div id="main">
 				<div class="field">
-				   <label>Введите имя марки</label>
+				   <label>Введите имя типа</label>
 				   <input type="text" name="name" />
 				</div>
 			<div class="field">
