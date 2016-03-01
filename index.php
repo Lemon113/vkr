@@ -11,8 +11,8 @@
 			<ul>
 				<li><a href="addGoods.php">ДОБАВИТЬ ТОВАР</a></li>
 				<li><a href="addMarks.php">ДОБАВИТЬ МАРКИ</a></li>
-				<li><a href="#">ДОБАВИТЬ ХАРАКТЕРИСТИКИ</a></li>
-				<li><a href="#">ДОБАВИТЬ ТИПЫ</a></li>
+				<li><a href="addChars.php">ДОБАВИТЬ ХАРАКТЕРИСТИКИ</a></li>
+				<li><a href="addTypes.php">ДОБАВИТЬ ТИПЫ</a></li>
 			</ul>
 		</div>
 	</div>

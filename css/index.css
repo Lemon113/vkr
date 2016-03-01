@@ -36,6 +36,10 @@ body{
 	background-color:#ACBCCC;
 }
 
+#content #infoblock{
+	display:inline-block;
+}
+
 #content{
 	position:relative;
 	background-color:#DCDCDC;
@@ -65,8 +69,8 @@ body{
 }
 
 #content label{
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 80px;
+	margin-right: 90px;
 	margin-bottom: 10px;
 	float:left;
 }
